@@ -69,17 +69,10 @@ function playGame() {
 	var values = findMax(money);
 	document.getElementById("results").style.display = "block";
 	//document.getElementById("resetButton").style.display = "block";
-	document.getElementById("submitButton").innerText = "Play Again?";
+	document.getElementById("submitButton").innerText = "Play Again";
 	document.getElementById("Bet").innerText = "$" + initialBet + ".00";
 	document.getElementById("totalRolls").innerText = diceTracker.length - 1;
 	document.getElementById("highestAmount").innerText = "$" + values[1] + ".00";
 	document.getElementById("rollsMax").innerText = values[0];
-/*
-	var textTest = "";
-	for (var i = 0; i < money.length; i++) {
-		textTest += money[i] + "<br>";
-	}
-	document.getElementById("test").innerHTML = textTest;
-*/
-	return false;
+	return false
 }
